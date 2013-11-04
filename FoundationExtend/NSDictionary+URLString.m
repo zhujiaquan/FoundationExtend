@@ -16,10 +16,10 @@
 @implementation NSDictionary (URLString)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-+ (NSDictionary *)dictionaryFromURLQuery:(NSString *)query
++ (NSDictionary *)dictionaryWithURLString:(NSString *)URLString
 {
     NSMutableDictionary *components = AMAutorelease([NSMutableDictionary new]);
-    for (NSString *keyValueString in [query componentsSeparatedByString:@"&"])
+    for (NSString *keyValueString in [URLString componentsSeparatedByString:@"&"])
     {
         NSArray *keyValueArray = [keyValueString componentsSeparatedByString:@"="];
         if ([keyValueArray count] < 2)

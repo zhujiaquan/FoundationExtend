@@ -10,7 +10,7 @@
 
 @interface NSDictionary (URLString)
 
-+ (NSDictionary *)dictionaryFromURLQuery:(NSString *)query;
++ (NSDictionary *)dictionaryWithURLString:(NSString *)URLString;
 - (NSString *)URLParametersString;
 
 @end
