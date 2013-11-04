@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8010A4B182733A8001220D3 /* NSString+URLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E8010A4A182733A8001220D3 /* NSString+URLCode.m */; };
 		E8EF257D1825FCE000EB6555 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EF257C1825FCE000EB6555 /* Foundation.framework */; };
 		E8EF258B1825FCE000EB6555 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EF258A1825FCE000EB6555 /* XCTest.framework */; };
 		E8EF258C1825FCE000EB6555 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EF257C1825FCE000EB6555 /* Foundation.framework */; };
@@ -49,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E8010A49182733A8001220D3 /* NSString+URLCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLCode.h"; sourceTree = "<group>"; };
+		E8010A4A182733A8001220D3 /* NSString+URLCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLCode.m"; sourceTree = "<group>"; };
 		E8EF25791825FCE000EB6555 /* libFoundationExtend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationExtend.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EF257C1825FCE000EB6555 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E8EF25801825FCE000EB6555 /* FoundationExtend-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoundationExtend-Prefix.pch"; sourceTree = "<group>"; };
@@ -161,6 +164,8 @@
 				E8EF25B61825FD6300EB6555 /* NSString+MD5.m */,
 				E8EF25B71825FD6300EB6555 /* NSString+Utilities.h */,
 				E8EF25B81825FD6300EB6555 /* NSString+Utilities.m */,
+				E8010A49182733A8001220D3 /* NSString+URLCode.h */,
+				E8010A4A182733A8001220D3 /* NSString+URLCode.m */,
 				E8EF257F1825FCE000EB6555 /* Supporting Files */,
 			);
 			path = FoundationExtend;
@@ -283,6 +288,7 @@
 				E8EF25BF1825FD6300EB6555 /* NSString+AES.m in Sources */,
 				E8EF25BC1825FD6300EB6555 /* NSDate+Utilities.m in Sources */,
 				E8EF25C41825FEE300EB6555 /* NSNumberFormatter+Utilities.m in Sources */,
+				E8010A4B182733A8001220D3 /* NSString+URLCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +475,7 @@
 				E8EF259E1825FCE000EB6555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8EF259F1825FCE000EB6555 /* Build configuration list for PBXNativeTarget "FoundationExtendTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +484,7 @@
 				E8EF25A11825FCE000EB6555 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -23,6 +23,7 @@
 #import "NSNumberFormatter+Utilities.h"
 #import "NSString+Utilities.h"
 #import "NSNumber+Utilities.h"
+#import "NSString+URLCode.h"
 #import "NSData+Base64.h"
 #import "NSString+Base64.h"
 #import "NSData+MD5.h"

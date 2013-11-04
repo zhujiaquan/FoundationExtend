@@ -24,9 +24,6 @@
 - (BOOL)contains:(NSString *)substring;
 - (NSString *)trimmedString;
 
-- (NSString *)URLEncodedString;
-- (NSString *)URLDecodedString;
-
 - (NSMutableArray *)substringByRegular:(NSString *)regular;
 
 @end

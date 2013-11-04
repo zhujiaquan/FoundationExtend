@@ -82,24 +82,6 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (NSString *)URLEncodedString
-{
-    NSString *encoded = (NSString *)
-	CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,
-											( CFStringRef)self,
-											NULL,
-                                            (CFStringRef)@"!*'();:@&=+$,/?%#[]",
-                                            kCFStringEncodingUTF8);
-    return AMAutorelease(encoded);
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (NSString *)URLDecodedString
-{
-	return [self stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
 + (NSNumber *)numberWithString:(NSString *)string numberStyle:(NSNumberFormatterStyle)style
 {
     NSNumberFormatter *formatter = [NSNumberFormatter numberFormatterWithNumberStyle:style];
