@@ -31,225 +31,225 @@ static NSString *kSharedNumberFormatterNoStyleLock  = @"kSharedNumberFormatterNo
 @implementation NSNumberFormatter (Utilities)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-//inline NSNumberFormatter *decimalStyleSharedNumberFormatter()
-//{
-//    if (sharedNumberFormatterDecimalStyle) {
-//        return sharedNumberFormatterDecimalStyle;
-//    }
-//    
-//    @synchronized(kSharedNumberFormatterDecimalStyleLock) {
-//        if (sharedNumberFormatterDecimalStyle == nil) {
-//            sharedNumberFormatterDecimalStyle = [[NSNumberFormatter alloc] init];
-//            sharedNumberFormatterDecimalStyle.numberStyle = NSNumberFormatterDecimalStyle;
-//        }
-//    }
-//    
-//    return sharedNumberFormatterDecimalStyle;
-//}
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//inline NSNumberFormatter *currencyStyleSharedNumberFormatter()
-//{
-//    if (sharedNumberFormatterCurrencyStyle) {
-//        return sharedNumberFormatterCurrencyStyle;
-//    }
-//    
-//    @synchronized(kSharedNumberFormatterCurrencyStyleLock) {
-//        if (sharedNumberFormatterCurrencyStyle == nil) {
-//            sharedNumberFormatterCurrencyStyle = [[NSNumberFormatter alloc] init];
-//            sharedNumberFormatterCurrencyStyle.numberStyle = NSNumberFormatterCurrencyStyle;
-//        }
-//    }
-//    
-//    return sharedNumberFormatterCurrencyStyle;
-//}
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//inline NSNumberFormatter *percentStyleSharedNumberFormatter()
-//{
-//    if (sharedNumberFormatterPercentStyle) {
-//        return sharedNumberFormatterPercentStyle;
-//    }
-//    
-//    @synchronized(kSharedNumberFormatterPercentStyleLock) {
-//        if (sharedNumberFormatterPercentStyle == nil) {
-//            sharedNumberFormatterPercentStyle = [[NSNumberFormatter alloc] init];
-//            sharedNumberFormatterPercentStyle.numberStyle = NSNumberFormatterPercentStyle;
-//        }
-//    }
-//    
-//    return sharedNumberFormatterCurrencyStyle;
-//}
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//inline NSNumberFormatter *scientificStyleSharedNumberFormatter()
-//{
-//    if (sharedNumberFormatterScientificStyle) {
-//        return sharedNumberFormatterScientificStyle;
-//    }
-//    
-//    @synchronized(kSharedNumberFormatterScientificStyleLock) {
-//        if (sharedNumberFormatterScientificStyle == nil) {
-//            sharedNumberFormatterScientificStyle = [[NSNumberFormatter alloc] init];
-//            sharedNumberFormatterScientificStyle.numberStyle = NSNumberFormatterScientificStyle;
-//        }
-//    }
-//    
-//    return sharedNumberFormatterCurrencyStyle;
-//}
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//inline NSNumberFormatter *spellOutStyleSharedNumberFormatter()
-//{
-//    if (sharedNumberFormatterSpellOutStyle) {
-//        return sharedNumberFormatterSpellOutStyle;
-//    }
-//    
-//    @synchronized(kSharedNumberFormatterSpellOutStyleLock) {
-//        if (sharedNumberFormatterSpellOutStyle == nil) {
-//            sharedNumberFormatterSpellOutStyle = [[NSNumberFormatter alloc] init];
-//            sharedNumberFormatterSpellOutStyle.numberStyle = NSNumberFormatterSpellOutStyle;
-//        }
-//    }
-//    
-//    return sharedNumberFormatterSpellOutStyle;
-//}
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//inline NSNumberFormatter *noStyleSharedNumberFormatter()
-//{
-//    if (sharedNumberFormatterNoStyle) {
-//        return sharedNumberFormatterNoStyle;
-//    }
-//    
-//    @synchronized(kSharedNumberFormatterNoStyleLock) {
-//        if (sharedNumberFormatterNoStyle == nil) {
-//            sharedNumberFormatterNoStyle = [[NSNumberFormatter alloc] init];
-//            sharedNumberFormatterNoStyle.numberStyle = NSNumberFormatterNoStyle;
-//        }
-//    }
-//    
-//    return sharedNumberFormatterSpellOutStyle;
-//}
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-//+ (NSNumberFormatter *)numberFormatterWithNumberStyle:(NSNumberFormatterStyle)style
-//{
-//    NSNumberFormatter *formatter = nil;
-//    switch (style)
-//    {
-//        case NSNumberFormatterDecimalStyle:
-//        formatter = decimalStyleSharedNumberFormatter();
-//        break;
-//        
-//        case NSNumberFormatterCurrencyStyle:
-//        formatter = currencyStyleSharedNumberFormatter();
-//        break;
-//        
-//        case NSNumberFormatterPercentStyle:
-//        formatter = percentStyleSharedNumberFormatter();
-//        break;
-//        
-//        case NSNumberFormatterScientificStyle:
-//        formatter = scientificStyleSharedNumberFormatter();
-//        break;
-//        
-//        case NSNumberFormatterSpellOutStyle:
-//        formatter = spellOutStyleSharedNumberFormatter();
-//        break;
-//        
-//        default:
-//        formatter = noStyleSharedNumberFormatter();
-//        break;
-//    }
-//    return formatter;
-//}
++ (NSNumberFormatter *)decimalStyleSharedNumberFormatter
+{
+    if (sharedNumberFormatterDecimalStyle) {
+        return sharedNumberFormatterDecimalStyle;
+    }
+    
+    @synchronized(kSharedNumberFormatterDecimalStyleLock) {
+        if (sharedNumberFormatterDecimalStyle == nil) {
+            sharedNumberFormatterDecimalStyle = [[NSNumberFormatter alloc] init];
+            sharedNumberFormatterDecimalStyle.numberStyle = NSNumberFormatterDecimalStyle;
+        }
+    }
+    
+    return sharedNumberFormatterDecimalStyle;
+}
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
++ (NSNumberFormatter *)currencyStyleSharedNumberFormatter
+{
+    if (sharedNumberFormatterCurrencyStyle) {
+        return sharedNumberFormatterCurrencyStyle;
+    }
+    
+    @synchronized(kSharedNumberFormatterCurrencyStyleLock) {
+        if (sharedNumberFormatterCurrencyStyle == nil) {
+            sharedNumberFormatterCurrencyStyle = [[NSNumberFormatter alloc] init];
+            sharedNumberFormatterCurrencyStyle.numberStyle = NSNumberFormatterCurrencyStyle;
+        }
+    }
+    
+    return sharedNumberFormatterCurrencyStyle;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
++ (NSNumberFormatter *)percentStyleSharedNumberFormatter
+{
+    if (sharedNumberFormatterPercentStyle) {
+        return sharedNumberFormatterPercentStyle;
+    }
+    
+    @synchronized(kSharedNumberFormatterPercentStyleLock) {
+        if (sharedNumberFormatterPercentStyle == nil) {
+            sharedNumberFormatterPercentStyle = [[NSNumberFormatter alloc] init];
+            sharedNumberFormatterPercentStyle.numberStyle = NSNumberFormatterPercentStyle;
+        }
+    }
+    
+    return sharedNumberFormatterCurrencyStyle;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
++ (NSNumberFormatter *)scientificStyleSharedNumberFormatter
+{
+    if (sharedNumberFormatterScientificStyle) {
+        return sharedNumberFormatterScientificStyle;
+    }
+    
+    @synchronized(kSharedNumberFormatterScientificStyleLock) {
+        if (sharedNumberFormatterScientificStyle == nil) {
+            sharedNumberFormatterScientificStyle = [[NSNumberFormatter alloc] init];
+            sharedNumberFormatterScientificStyle.numberStyle = NSNumberFormatterScientificStyle;
+        }
+    }
+    
+    return sharedNumberFormatterCurrencyStyle;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
++ (NSNumberFormatter *)spellOutStyleSharedNumberFormatter
+{
+    if (sharedNumberFormatterSpellOutStyle) {
+        return sharedNumberFormatterSpellOutStyle;
+    }
+    
+    @synchronized(kSharedNumberFormatterSpellOutStyleLock) {
+        if (sharedNumberFormatterSpellOutStyle == nil) {
+            sharedNumberFormatterSpellOutStyle = [[NSNumberFormatter alloc] init];
+            sharedNumberFormatterSpellOutStyle.numberStyle = NSNumberFormatterSpellOutStyle;
+        }
+    }
+    
+    return sharedNumberFormatterSpellOutStyle;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
++ (NSNumberFormatter *)noStyleSharedNumberFormatter
+{
+    if (sharedNumberFormatterNoStyle) {
+        return sharedNumberFormatterNoStyle;
+    }
+    
+    @synchronized(kSharedNumberFormatterNoStyleLock) {
+        if (sharedNumberFormatterNoStyle == nil) {
+            sharedNumberFormatterNoStyle = [[NSNumberFormatter alloc] init];
+            sharedNumberFormatterNoStyle.numberStyle = NSNumberFormatterNoStyle;
+        }
+    }
+    
+    return sharedNumberFormatterSpellOutStyle;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 + (NSNumberFormatter *)numberFormatterWithNumberStyle:(NSNumberFormatterStyle)style
 {
     NSNumberFormatter *formatter = nil;
     switch (style)
     {
         case NSNumberFormatterDecimalStyle:
-            if (sharedNumberFormatterDecimalStyle) {
-                formatter = sharedNumberFormatterDecimalStyle;
-                break;
-            }
-            @synchronized(kSharedNumberFormatterDecimalStyleLock) {
-                if (sharedNumberFormatterDecimalStyle == nil) {
-                    sharedNumberFormatterDecimalStyle = [[NSNumberFormatter alloc] init];
-                    sharedNumberFormatterDecimalStyle.numberStyle = NSNumberFormatterDecimalStyle;
-                }
-            }
-            formatter = sharedNumberFormatterDecimalStyle;
-            break;
+        formatter = [NSNumberFormatter decimalStyleSharedNumberFormatter];
+        break;
         
         case NSNumberFormatterCurrencyStyle:
-            if (sharedNumberFormatterCurrencyStyle){
-                formatter = sharedNumberFormatterCurrencyStyle;
-            }
-            @synchronized(kSharedNumberFormatterCurrencyStyleLock) {
-                if (sharedNumberFormatterCurrencyStyle == nil) {
-                    sharedNumberFormatterCurrencyStyle = [[NSNumberFormatter alloc] init];
-                    sharedNumberFormatterCurrencyStyle.numberStyle = NSNumberFormatterCurrencyStyle;
-                }
-            }
-            formatter = sharedNumberFormatterCurrencyStyle;
-            break;
+        formatter = [NSNumberFormatter currencyStyleSharedNumberFormatter];
+        break;
         
         case NSNumberFormatterPercentStyle:
-            if (sharedNumberFormatterPercentStyle){
-                formatter = sharedNumberFormatterPercentStyle;
-            }
-            @synchronized(kSharedNumberFormatterPercentStyleLock) {
-                if (sharedNumberFormatterPercentStyle == nil) {
-                    sharedNumberFormatterPercentStyle = [[NSNumberFormatter alloc] init];
-                    sharedNumberFormatterPercentStyle.numberStyle = NSNumberFormatterPercentStyle;
-                }
-            }
-            formatter = sharedNumberFormatterCurrencyStyle;
-            break;
+        formatter = [NSNumberFormatter percentStyleSharedNumberFormatter];
+        break;
         
         case NSNumberFormatterScientificStyle:
-            if (sharedNumberFormatterScientificStyle){
-                formatter = sharedNumberFormatterScientificStyle;
-            }
-            @synchronized(kSharedNumberFormatterScientificStyleLock) {
-                if (sharedNumberFormatterScientificStyle == nil) {
-                    sharedNumberFormatterScientificStyle = [[NSNumberFormatter alloc] init];
-                    sharedNumberFormatterScientificStyle.numberStyle = NSNumberFormatterScientificStyle;
-                }
-            }
-            formatter = sharedNumberFormatterCurrencyStyle;
-            break;
+        formatter = [NSNumberFormatter scientificStyleSharedNumberFormatter];
+        break;
         
         case NSNumberFormatterSpellOutStyle:
-            if (sharedNumberFormatterSpellOutStyle){
-                formatter = sharedNumberFormatterSpellOutStyle;
-            }
-            @synchronized(kSharedNumberFormatterSpellOutStyleLock) {
-                if (sharedNumberFormatterSpellOutStyle == nil) {
-                    sharedNumberFormatterSpellOutStyle = [[NSNumberFormatter alloc] init];
-                    sharedNumberFormatterSpellOutStyle.numberStyle = NSNumberFormatterSpellOutStyle;
-                }
-            }
-            formatter = sharedNumberFormatterSpellOutStyle;
-            break;
+        formatter = [NSNumberFormatter spellOutStyleSharedNumberFormatter];
+        break;
         
         default:
-            if (sharedNumberFormatterNoStyle){
-                formatter = sharedNumberFormatterNoStyle;
-            }
-            @synchronized(kSharedNumberFormatterNoStyleLock) {
-                if (sharedNumberFormatterNoStyle == nil) {
-                    sharedNumberFormatterNoStyle = [[NSNumberFormatter alloc] init];
-                    sharedNumberFormatterNoStyle.numberStyle = NSNumberFormatterNoStyle;
-                }
-            }
-            formatter = sharedNumberFormatterSpellOutStyle;
-            break;
+        formatter = [NSNumberFormatter noStyleSharedNumberFormatter];
+        break;
     }
     return formatter;
 }
+
+//+ (NSNumberFormatter *)numberFormatterWithNumberStyle:(NSNumberFormatterStyle)style
+//{
+//    NSNumberFormatter *formatter = nil;
+//    switch (style)
+//    {
+//        case NSNumberFormatterDecimalStyle:
+//            if (sharedNumberFormatterDecimalStyle) {
+//                formatter = sharedNumberFormatterDecimalStyle;
+//                break;
+//            }
+//            @synchronized(kSharedNumberFormatterDecimalStyleLock) {
+//                if (sharedNumberFormatterDecimalStyle == nil) {
+//                    sharedNumberFormatterDecimalStyle = [[NSNumberFormatter alloc] init];
+//                    sharedNumberFormatterDecimalStyle.numberStyle = NSNumberFormatterDecimalStyle;
+//                }
+//            }
+//            formatter = sharedNumberFormatterDecimalStyle;
+//            break;
+//        
+//        case NSNumberFormatterCurrencyStyle:
+//            if (sharedNumberFormatterCurrencyStyle){
+//                formatter = sharedNumberFormatterCurrencyStyle;
+//            }
+//            @synchronized(kSharedNumberFormatterCurrencyStyleLock) {
+//                if (sharedNumberFormatterCurrencyStyle == nil) {
+//                    sharedNumberFormatterCurrencyStyle = [[NSNumberFormatter alloc] init];
+//                    sharedNumberFormatterCurrencyStyle.numberStyle = NSNumberFormatterCurrencyStyle;
+//                }
+//            }
+//            formatter = sharedNumberFormatterCurrencyStyle;
+//            break;
+//        
+//        case NSNumberFormatterPercentStyle:
+//            if (sharedNumberFormatterPercentStyle){
+//                formatter = sharedNumberFormatterPercentStyle;
+//            }
+//            @synchronized(kSharedNumberFormatterPercentStyleLock) {
+//                if (sharedNumberFormatterPercentStyle == nil) {
+//                    sharedNumberFormatterPercentStyle = [[NSNumberFormatter alloc] init];
+//                    sharedNumberFormatterPercentStyle.numberStyle = NSNumberFormatterPercentStyle;
+//                }
+//            }
+//            formatter = sharedNumberFormatterCurrencyStyle;
+//            break;
+//        
+//        case NSNumberFormatterScientificStyle:
+//            if (sharedNumberFormatterScientificStyle){
+//                formatter = sharedNumberFormatterScientificStyle;
+//            }
+//            @synchronized(kSharedNumberFormatterScientificStyleLock) {
+//                if (sharedNumberFormatterScientificStyle == nil) {
+//                    sharedNumberFormatterScientificStyle = [[NSNumberFormatter alloc] init];
+//                    sharedNumberFormatterScientificStyle.numberStyle = NSNumberFormatterScientificStyle;
+//                }
+//            }
+//            formatter = sharedNumberFormatterCurrencyStyle;
+//            break;
+//        
+//        case NSNumberFormatterSpellOutStyle:
+//            if (sharedNumberFormatterSpellOutStyle){
+//                formatter = sharedNumberFormatterSpellOutStyle;
+//            }
+//            @synchronized(kSharedNumberFormatterSpellOutStyleLock) {
+//                if (sharedNumberFormatterSpellOutStyle == nil) {
+//                    sharedNumberFormatterSpellOutStyle = [[NSNumberFormatter alloc] init];
+//                    sharedNumberFormatterSpellOutStyle.numberStyle = NSNumberFormatterSpellOutStyle;
+//                }
+//            }
+//            formatter = sharedNumberFormatterSpellOutStyle;
+//            break;
+//        
+//        default:
+//            if (sharedNumberFormatterNoStyle){
+//                formatter = sharedNumberFormatterNoStyle;
+//            }
+//            @synchronized(kSharedNumberFormatterNoStyleLock) {
+//                if (sharedNumberFormatterNoStyle == nil) {
+//                    sharedNumberFormatterNoStyle = [[NSNumberFormatter alloc] init];
+//                    sharedNumberFormatterNoStyle.numberStyle = NSNumberFormatterNoStyle;
+//                }
+//            }
+//            formatter = sharedNumberFormatterSpellOutStyle;
+//            break;
+//    }
+//    return formatter;
+//}
 
 @end
