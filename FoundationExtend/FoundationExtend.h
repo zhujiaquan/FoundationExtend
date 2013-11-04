@@ -20,6 +20,7 @@
 
 #import "ARCMacros.h"
 #import "GCDDispatch.h"
+#import "NSObject+Utilities.h"
 #import "NSNumberFormatter+Utilities.h"
 #import "NSString+Utilities.h"
 #import "NSNumber+Utilities.h"
@@ -31,4 +32,5 @@
 #import "NSData+AES.h"
 #import "NSString+AES.h"
 #import "NSDate+Utilities.h"
+#import "NSDictionary+URLString.h"
 
