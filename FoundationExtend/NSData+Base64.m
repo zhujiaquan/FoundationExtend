@@ -7,6 +7,7 @@
 //
 
 #import "NSData+Base64.h"
+#import "ARCMacros.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -119,10 +120,11 @@
     {
         // truncate data to match actual output length
         outputBytes = realloc(outputBytes, outputLength);
-        return [[NSString alloc] initWithBytesNoCopy:outputBytes
-                                              length:outputLength
-                                            encoding:NSASCIIStringEncoding
-                                        freeWhenDone:YES];
+        NSString *base64EncodedString = [[NSString alloc] initWithBytesNoCopy:outputBytes
+                                                                       length:outputLength
+                                                                     encoding:NSASCIIStringEncoding
+                                                                 freeWhenDone:YES];
+        return AMAutorelease(base64EncodedString);
     }
     else if (outputBytes)
     {
