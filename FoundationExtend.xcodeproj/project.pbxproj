@@ -87,6 +87,7 @@
 		E8F892F5182882A20074A881 /* NSString+URLCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLCode.m"; sourceTree = "<group>"; };
 		E8F892F6182882A20074A881 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
 		E8F892F7182882A20074A881 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		E8F8930E1828944E0074A881 /* FoundationExtend-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoundationExtend-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				E8F892DC182882A20074A881 /* FoundationExtend.h */,
+				E8F8930E1828944E0074A881 /* FoundationExtend-Prefix.pch */,
 				E8F89305182883BB0074A881 /* Headers */,
 				E8F89306182884290074A881 /* Sources */,
 			);
