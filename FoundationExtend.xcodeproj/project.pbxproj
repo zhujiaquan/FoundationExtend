@@ -176,7 +176,21 @@
 		E8F89305182883BB0074A881 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				E8F8931118289D0D0074A881 /* Public */,
+				E8F892DA182882A20074A881 /* ARCMacros.h */,
+				E8F892DD182882A20074A881 /* GCDDispatch.h */,
+				E8F892DE182882A20074A881 /* NSData+AES.h */,
+				E8F892E0182882A20074A881 /* NSData+Base64.h */,
+				E8F892E2182882A20074A881 /* NSData+MD5.h */,
+				E8F892E4182882A20074A881 /* NSDate+Utilities.h */,
+				E8F892E6182882A20074A881 /* NSDictionary+URLString.h */,
+				E8F892E8182882A20074A881 /* NSNumber+Utilities.h */,
+				E8F892EA182882A20074A881 /* NSNumberFormatter+Utilities.h */,
+				E8F892EC182882A20074A881 /* NSObject+Utilities.h */,
+				E8F892EE182882A20074A881 /* NSString+AES.h */,
+				E8F892F0182882A20074A881 /* NSString+Base64.h */,
+				E8F892F2182882A20074A881 /* NSString+MD5.h */,
+				E8F892F4182882A20074A881 /* NSString+URLCode.h */,
+				E8F892F6182882A20074A881 /* NSString+Utilities.h */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -199,28 +213,6 @@
 				E8F892F7182882A20074A881 /* NSString+Utilities.m */,
 			);
 			name = Sources;
-			sourceTree = "<group>";
-		};
-		E8F8931118289D0D0074A881 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				E8F892DA182882A20074A881 /* ARCMacros.h */,
-				E8F892DD182882A20074A881 /* GCDDispatch.h */,
-				E8F892DE182882A20074A881 /* NSData+AES.h */,
-				E8F892E0182882A20074A881 /* NSData+Base64.h */,
-				E8F892E2182882A20074A881 /* NSData+MD5.h */,
-				E8F892E4182882A20074A881 /* NSDate+Utilities.h */,
-				E8F892E6182882A20074A881 /* NSDictionary+URLString.h */,
-				E8F892E8182882A20074A881 /* NSNumber+Utilities.h */,
-				E8F892EA182882A20074A881 /* NSNumberFormatter+Utilities.h */,
-				E8F892EC182882A20074A881 /* NSObject+Utilities.h */,
-				E8F892EE182882A20074A881 /* NSString+AES.h */,
-				E8F892F0182882A20074A881 /* NSString+Base64.h */,
-				E8F892F2182882A20074A881 /* NSString+MD5.h */,
-				E8F892F4182882A20074A881 /* NSString+URLCode.h */,
-				E8F892F6182882A20074A881 /* NSString+Utilities.h */,
-			);
-			name = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
