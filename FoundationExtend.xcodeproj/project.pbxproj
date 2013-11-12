@@ -95,6 +95,7 @@
 		E8145FB31828C11200CFB9F5 /* NSString+URLCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLCode.m"; sourceTree = "<group>"; };
 		E8145FB41828C11200CFB9F5 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
 		E8145FB51828C11200CFB9F5 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		E81461381828ED4500CFB9F5 /* Library.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Library.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +124,7 @@
 		E8145F641828C0C300CFB9F5 = {
 			isa = PBXGroup;
 			children = (
+				E81461371828ED4500CFB9F5 /* Configurations */,
 				E8145F721828C0C300CFB9F5 /* FoundationExtend */,
 				E8145F871828C0C300CFB9F5 /* FoundationExtendTests */,
 				E8145F6F1828C0C300CFB9F5 /* Frameworks */,
@@ -219,6 +221,14 @@
 				E8145FB51828C11200CFB9F5 /* NSString+Utilities.m */,
 			);
 			name = Sources;
+			sourceTree = "<group>";
+		};
+		E81461371828ED4500CFB9F5 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				E81461381828ED4500CFB9F5 /* Library.xcconfig */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,24 +454,30 @@
 		};
 		E8145F931828C0C400CFB9F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E81461381828ED4500CFB9F5 /* Library.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/FoundationExtend.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoundationExtend/FoundationExtend-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(BASE_PRODUCT_NAME)/private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(BASE_PRODUCT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		E8145F941828C0C400CFB9F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E81461381828ED4500CFB9F5 /* Library.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/FoundationExtend.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FoundationExtend/FoundationExtend-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = "$(BASE_PRODUCT_NAME)/private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(BASE_PRODUCT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
