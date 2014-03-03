@@ -8,71 +8,73 @@
 
 /* Begin PBXBuildFile section */
 		E8145F711828C0C300CFB9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8145F701828C0C300CFB9F5 /* Foundation.framework */; };
-		E8145FC61828C1AD00CFB9F5 /* FoundationExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = E8145F9A1828C11200CFB9F5 /* FoundationExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E81A9B6E18C4160400A0CE2F /* ARCMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B5218C4160400A0CE2F /* ARCMacros.h */; };
-		E81A9B6F18C4160400A0CE2F /* GCDDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B5318C4160400A0CE2F /* GCDDispatch.h */; };
-		E81A9B7018C4160400A0CE2F /* NSData+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B5418C4160400A0CE2F /* NSData+AES.h */; };
-		E81A9B7118C4160400A0CE2F /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B5518C4160400A0CE2F /* NSData+AES.m */; };
-		E81A9B7218C4160400A0CE2F /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B5618C4160400A0CE2F /* NSData+Base64.h */; };
-		E81A9B7318C4160400A0CE2F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B5718C4160400A0CE2F /* NSData+Base64.m */; };
-		E81A9B7418C4160400A0CE2F /* NSData+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B5818C4160400A0CE2F /* NSData+MD5.h */; };
-		E81A9B7518C4160400A0CE2F /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B5918C4160400A0CE2F /* NSData+MD5.m */; };
-		E81A9B7618C4160400A0CE2F /* NSDate+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B5A18C4160400A0CE2F /* NSDate+Utilities.h */; };
-		E81A9B7718C4160400A0CE2F /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B5B18C4160400A0CE2F /* NSDate+Utilities.m */; };
-		E81A9B7818C4160400A0CE2F /* NSDictionary+URLString.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B5C18C4160400A0CE2F /* NSDictionary+URLString.h */; };
-		E81A9B7918C4160400A0CE2F /* NSDictionary+URLString.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B5D18C4160400A0CE2F /* NSDictionary+URLString.m */; };
-		E81A9B7A18C4160400A0CE2F /* NSNumber+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B5E18C4160400A0CE2F /* NSNumber+Utilities.h */; };
-		E81A9B7B18C4160400A0CE2F /* NSNumber+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B5F18C4160400A0CE2F /* NSNumber+Utilities.m */; };
-		E81A9B7C18C4160400A0CE2F /* NSNumberFormatter+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B6018C4160400A0CE2F /* NSNumberFormatter+Utilities.h */; };
-		E81A9B7D18C4160400A0CE2F /* NSNumberFormatter+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B6118C4160400A0CE2F /* NSNumberFormatter+Utilities.m */; };
-		E81A9B7E18C4160400A0CE2F /* NSObject+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B6218C4160400A0CE2F /* NSObject+Utilities.h */; };
-		E81A9B7F18C4160400A0CE2F /* NSObject+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B6318C4160400A0CE2F /* NSObject+Utilities.m */; };
-		E81A9B8018C4160400A0CE2F /* NSString+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B6418C4160400A0CE2F /* NSString+AES.h */; };
-		E81A9B8118C4160400A0CE2F /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B6518C4160400A0CE2F /* NSString+AES.m */; };
-		E81A9B8218C4160400A0CE2F /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B6618C4160400A0CE2F /* NSString+Base64.h */; };
-		E81A9B8318C4160400A0CE2F /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B6718C4160400A0CE2F /* NSString+Base64.m */; };
-		E81A9B8418C4160400A0CE2F /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B6818C4160400A0CE2F /* NSString+MD5.h */; };
-		E81A9B8518C4160400A0CE2F /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B6918C4160400A0CE2F /* NSString+MD5.m */; };
-		E81A9B8618C4160400A0CE2F /* NSString+URLCode.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B6A18C4160400A0CE2F /* NSString+URLCode.h */; };
-		E81A9B8718C4160400A0CE2F /* NSString+URLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B6B18C4160400A0CE2F /* NSString+URLCode.m */; };
-		E81A9B8818C4160400A0CE2F /* NSString+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9B6C18C4160400A0CE2F /* NSString+Utilities.h */; };
-		E81A9B8918C4160400A0CE2F /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9B6D18C4160400A0CE2F /* NSString+Utilities.m */; };
+		E81A9BC818C41C8100A0CE2F /* ARCMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BA918C41C8100A0CE2F /* ARCMacros.h */; };
+		E81A9BC918C41C8100A0CE2F /* FoundationExtend-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BAA18C41C8100A0CE2F /* FoundationExtend-Prefix.pch */; };
+		E81A9BCA18C41C8100A0CE2F /* FoundationExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BAB18C41C8100A0CE2F /* FoundationExtend.h */; };
+		E81A9BCB18C41C8100A0CE2F /* GCDDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BAC18C41C8100A0CE2F /* GCDDispatch.h */; };
+		E81A9BCC18C41C8100A0CE2F /* NSData+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BAD18C41C8100A0CE2F /* NSData+AES.h */; };
+		E81A9BCD18C41C8100A0CE2F /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BAE18C41C8100A0CE2F /* NSData+AES.m */; };
+		E81A9BCE18C41C8100A0CE2F /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BAF18C41C8100A0CE2F /* NSData+Base64.h */; };
+		E81A9BCF18C41C8100A0CE2F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BB018C41C8100A0CE2F /* NSData+Base64.m */; };
+		E81A9BD018C41C8100A0CE2F /* NSData+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BB118C41C8100A0CE2F /* NSData+MD5.h */; };
+		E81A9BD118C41C8100A0CE2F /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BB218C41C8100A0CE2F /* NSData+MD5.m */; };
+		E81A9BD218C41C8100A0CE2F /* NSDate+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BB318C41C8100A0CE2F /* NSDate+Utilities.h */; };
+		E81A9BD318C41C8100A0CE2F /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BB418C41C8100A0CE2F /* NSDate+Utilities.m */; };
+		E81A9BD418C41C8100A0CE2F /* NSDictionary+URLString.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BB518C41C8100A0CE2F /* NSDictionary+URLString.h */; };
+		E81A9BD518C41C8100A0CE2F /* NSDictionary+URLString.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BB618C41C8100A0CE2F /* NSDictionary+URLString.m */; };
+		E81A9BD618C41C8100A0CE2F /* NSNumber+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BB718C41C8100A0CE2F /* NSNumber+Utilities.h */; };
+		E81A9BD718C41C8100A0CE2F /* NSNumber+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BB818C41C8100A0CE2F /* NSNumber+Utilities.m */; };
+		E81A9BD818C41C8100A0CE2F /* NSNumberFormatter+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BB918C41C8100A0CE2F /* NSNumberFormatter+Utilities.h */; };
+		E81A9BD918C41C8100A0CE2F /* NSNumberFormatter+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BBA18C41C8100A0CE2F /* NSNumberFormatter+Utilities.m */; };
+		E81A9BDA18C41C8100A0CE2F /* NSObject+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BBB18C41C8100A0CE2F /* NSObject+Utilities.h */; };
+		E81A9BDB18C41C8100A0CE2F /* NSObject+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BBC18C41C8100A0CE2F /* NSObject+Utilities.m */; };
+		E81A9BDC18C41C8100A0CE2F /* NSString+AES.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BBD18C41C8100A0CE2F /* NSString+AES.h */; };
+		E81A9BDD18C41C8100A0CE2F /* NSString+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BBE18C41C8100A0CE2F /* NSString+AES.m */; };
+		E81A9BDE18C41C8100A0CE2F /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BBF18C41C8100A0CE2F /* NSString+Base64.h */; };
+		E81A9BDF18C41C8100A0CE2F /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BC018C41C8100A0CE2F /* NSString+Base64.m */; };
+		E81A9BE018C41C8100A0CE2F /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BC118C41C8100A0CE2F /* NSString+MD5.h */; };
+		E81A9BE118C41C8100A0CE2F /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BC218C41C8100A0CE2F /* NSString+MD5.m */; };
+		E81A9BE218C41C8100A0CE2F /* NSString+URLCode.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BC318C41C8100A0CE2F /* NSString+URLCode.h */; };
+		E81A9BE318C41C8100A0CE2F /* NSString+URLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BC418C41C8100A0CE2F /* NSString+URLCode.m */; };
+		E81A9BE418C41C8100A0CE2F /* NSString+Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = E81A9BC518C41C8100A0CE2F /* NSString+Utilities.h */; };
+		E81A9BE518C41C8100A0CE2F /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E81A9BC618C41C8100A0CE2F /* NSString+Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E8145F6D1828C0C300CFB9F5 /* libFoundationExtend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFoundationExtend.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8145F701828C0C300CFB9F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E8145F7F1828C0C300CFB9F5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		E8145F991828C11200CFB9F5 /* FoundationExtend-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoundationExtend-Prefix.pch"; sourceTree = "<group>"; };
-		E8145F9A1828C11200CFB9F5 /* FoundationExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationExtend.h; sourceTree = "<group>"; };
-		E81A9B5218C4160400A0CE2F /* ARCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCMacros.h; sourceTree = "<group>"; };
-		E81A9B5318C4160400A0CE2F /* GCDDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDispatch.h; sourceTree = "<group>"; };
-		E81A9B5418C4160400A0CE2F /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
-		E81A9B5518C4160400A0CE2F /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
-		E81A9B5618C4160400A0CE2F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		E81A9B5718C4160400A0CE2F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		E81A9B5818C4160400A0CE2F /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
-		E81A9B5918C4160400A0CE2F /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
-		E81A9B5A18C4160400A0CE2F /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
-		E81A9B5B18C4160400A0CE2F /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
-		E81A9B5C18C4160400A0CE2F /* NSDictionary+URLString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URLString.h"; sourceTree = "<group>"; };
-		E81A9B5D18C4160400A0CE2F /* NSDictionary+URLString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URLString.m"; sourceTree = "<group>"; };
-		E81A9B5E18C4160400A0CE2F /* NSNumber+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Utilities.h"; sourceTree = "<group>"; };
-		E81A9B5F18C4160400A0CE2F /* NSNumber+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Utilities.m"; sourceTree = "<group>"; };
-		E81A9B6018C4160400A0CE2F /* NSNumberFormatter+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumberFormatter+Utilities.h"; sourceTree = "<group>"; };
-		E81A9B6118C4160400A0CE2F /* NSNumberFormatter+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+Utilities.m"; sourceTree = "<group>"; };
-		E81A9B6218C4160400A0CE2F /* NSObject+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utilities.h"; sourceTree = "<group>"; };
-		E81A9B6318C4160400A0CE2F /* NSObject+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utilities.m"; sourceTree = "<group>"; };
-		E81A9B6418C4160400A0CE2F /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = "<group>"; };
-		E81A9B6518C4160400A0CE2F /* NSString+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = "<group>"; };
-		E81A9B6618C4160400A0CE2F /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		E81A9B6718C4160400A0CE2F /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
-		E81A9B6818C4160400A0CE2F /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
-		E81A9B6918C4160400A0CE2F /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		E81A9B6A18C4160400A0CE2F /* NSString+URLCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLCode.h"; sourceTree = "<group>"; };
-		E81A9B6B18C4160400A0CE2F /* NSString+URLCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLCode.m"; sourceTree = "<group>"; };
-		E81A9B6C18C4160400A0CE2F /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
-		E81A9B6D18C4160400A0CE2F /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		E81A9BA918C41C8100A0CE2F /* ARCMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCMacros.h; sourceTree = SOURCE_ROOT; };
+		E81A9BAA18C41C8100A0CE2F /* FoundationExtend-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FoundationExtend-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E81A9BAB18C41C8100A0CE2F /* FoundationExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationExtend.h; sourceTree = SOURCE_ROOT; };
+		E81A9BAC18C41C8100A0CE2F /* GCDDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDDispatch.h; sourceTree = SOURCE_ROOT; };
+		E81A9BAD18C41C8100A0CE2F /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BAE18C41C8100A0CE2F /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BAF18C41C8100A0CE2F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BB018C41C8100A0CE2F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BB118C41C8100A0CE2F /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BB218C41C8100A0CE2F /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BB318C41C8100A0CE2F /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BB418C41C8100A0CE2F /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BB518C41C8100A0CE2F /* NSDictionary+URLString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+URLString.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BB618C41C8100A0CE2F /* NSDictionary+URLString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+URLString.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BB718C41C8100A0CE2F /* NSNumber+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Utilities.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BB818C41C8100A0CE2F /* NSNumber+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Utilities.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BB918C41C8100A0CE2F /* NSNumberFormatter+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumberFormatter+Utilities.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BBA18C41C8100A0CE2F /* NSNumberFormatter+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumberFormatter+Utilities.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BBB18C41C8100A0CE2F /* NSObject+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utilities.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BBC18C41C8100A0CE2F /* NSObject+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utilities.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BBD18C41C8100A0CE2F /* NSString+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AES.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BBE18C41C8100A0CE2F /* NSString+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AES.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BBF18C41C8100A0CE2F /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BC018C41C8100A0CE2F /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BC118C41C8100A0CE2F /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BC218C41C8100A0CE2F /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BC318C41C8100A0CE2F /* NSString+URLCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLCode.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BC418C41C8100A0CE2F /* NSString+URLCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLCode.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BC518C41C8100A0CE2F /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = SOURCE_ROOT; };
+		E81A9BC618C41C8100A0CE2F /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = SOURCE_ROOT; };
+		E81A9BC718C41C8100A0CE2F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,36 +118,37 @@
 		E8145F721828C0C300CFB9F5 /* FoundationExtend */ = {
 			isa = PBXGroup;
 			children = (
-				E81A9B5218C4160400A0CE2F /* ARCMacros.h */,
-				E81A9B5318C4160400A0CE2F /* GCDDispatch.h */,
-				E81A9B5418C4160400A0CE2F /* NSData+AES.h */,
-				E81A9B5518C4160400A0CE2F /* NSData+AES.m */,
-				E81A9B5618C4160400A0CE2F /* NSData+Base64.h */,
-				E81A9B5718C4160400A0CE2F /* NSData+Base64.m */,
-				E81A9B5818C4160400A0CE2F /* NSData+MD5.h */,
-				E81A9B5918C4160400A0CE2F /* NSData+MD5.m */,
-				E81A9B5A18C4160400A0CE2F /* NSDate+Utilities.h */,
-				E81A9B5B18C4160400A0CE2F /* NSDate+Utilities.m */,
-				E81A9B5C18C4160400A0CE2F /* NSDictionary+URLString.h */,
-				E81A9B5D18C4160400A0CE2F /* NSDictionary+URLString.m */,
-				E81A9B5E18C4160400A0CE2F /* NSNumber+Utilities.h */,
-				E81A9B5F18C4160400A0CE2F /* NSNumber+Utilities.m */,
-				E81A9B6018C4160400A0CE2F /* NSNumberFormatter+Utilities.h */,
-				E81A9B6118C4160400A0CE2F /* NSNumberFormatter+Utilities.m */,
-				E81A9B6218C4160400A0CE2F /* NSObject+Utilities.h */,
-				E81A9B6318C4160400A0CE2F /* NSObject+Utilities.m */,
-				E81A9B6418C4160400A0CE2F /* NSString+AES.h */,
-				E81A9B6518C4160400A0CE2F /* NSString+AES.m */,
-				E81A9B6618C4160400A0CE2F /* NSString+Base64.h */,
-				E81A9B6718C4160400A0CE2F /* NSString+Base64.m */,
-				E81A9B6818C4160400A0CE2F /* NSString+MD5.h */,
-				E81A9B6918C4160400A0CE2F /* NSString+MD5.m */,
-				E81A9B6A18C4160400A0CE2F /* NSString+URLCode.h */,
-				E81A9B6B18C4160400A0CE2F /* NSString+URLCode.m */,
-				E81A9B6C18C4160400A0CE2F /* NSString+Utilities.h */,
-				E81A9B6D18C4160400A0CE2F /* NSString+Utilities.m */,
-				E8145F991828C11200CFB9F5 /* FoundationExtend-Prefix.pch */,
-				E8145F9A1828C11200CFB9F5 /* FoundationExtend.h */,
+				E81A9BA918C41C8100A0CE2F /* ARCMacros.h */,
+				E81A9BAA18C41C8100A0CE2F /* FoundationExtend-Prefix.pch */,
+				E81A9BAB18C41C8100A0CE2F /* FoundationExtend.h */,
+				E81A9BAC18C41C8100A0CE2F /* GCDDispatch.h */,
+				E81A9BAD18C41C8100A0CE2F /* NSData+AES.h */,
+				E81A9BAE18C41C8100A0CE2F /* NSData+AES.m */,
+				E81A9BAF18C41C8100A0CE2F /* NSData+Base64.h */,
+				E81A9BB018C41C8100A0CE2F /* NSData+Base64.m */,
+				E81A9BB118C41C8100A0CE2F /* NSData+MD5.h */,
+				E81A9BB218C41C8100A0CE2F /* NSData+MD5.m */,
+				E81A9BB318C41C8100A0CE2F /* NSDate+Utilities.h */,
+				E81A9BB418C41C8100A0CE2F /* NSDate+Utilities.m */,
+				E81A9BB518C41C8100A0CE2F /* NSDictionary+URLString.h */,
+				E81A9BB618C41C8100A0CE2F /* NSDictionary+URLString.m */,
+				E81A9BB718C41C8100A0CE2F /* NSNumber+Utilities.h */,
+				E81A9BB818C41C8100A0CE2F /* NSNumber+Utilities.m */,
+				E81A9BB918C41C8100A0CE2F /* NSNumberFormatter+Utilities.h */,
+				E81A9BBA18C41C8100A0CE2F /* NSNumberFormatter+Utilities.m */,
+				E81A9BBB18C41C8100A0CE2F /* NSObject+Utilities.h */,
+				E81A9BBC18C41C8100A0CE2F /* NSObject+Utilities.m */,
+				E81A9BBD18C41C8100A0CE2F /* NSString+AES.h */,
+				E81A9BBE18C41C8100A0CE2F /* NSString+AES.m */,
+				E81A9BBF18C41C8100A0CE2F /* NSString+Base64.h */,
+				E81A9BC018C41C8100A0CE2F /* NSString+Base64.m */,
+				E81A9BC118C41C8100A0CE2F /* NSString+MD5.h */,
+				E81A9BC218C41C8100A0CE2F /* NSString+MD5.m */,
+				E81A9BC318C41C8100A0CE2F /* NSString+URLCode.h */,
+				E81A9BC418C41C8100A0CE2F /* NSString+URLCode.m */,
+				E81A9BC518C41C8100A0CE2F /* NSString+Utilities.h */,
+				E81A9BC618C41C8100A0CE2F /* NSString+Utilities.m */,
+				E81A9BC718C41C8100A0CE2F /* Podfile */,
 			);
 			path = FoundationExtend;
 			sourceTree = "<group>";
@@ -157,22 +160,23 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E81A9B8018C4160400A0CE2F /* NSString+AES.h in Headers */,
-				E81A9B7418C4160400A0CE2F /* NSData+MD5.h in Headers */,
-				E81A9B6E18C4160400A0CE2F /* ARCMacros.h in Headers */,
-				E81A9B7818C4160400A0CE2F /* NSDictionary+URLString.h in Headers */,
-				E81A9B8218C4160400A0CE2F /* NSString+Base64.h in Headers */,
-				E81A9B7018C4160400A0CE2F /* NSData+AES.h in Headers */,
-				E81A9B7C18C4160400A0CE2F /* NSNumberFormatter+Utilities.h in Headers */,
-				E81A9B7618C4160400A0CE2F /* NSDate+Utilities.h in Headers */,
-				E81A9B7218C4160400A0CE2F /* NSData+Base64.h in Headers */,
-				E81A9B8818C4160400A0CE2F /* NSString+Utilities.h in Headers */,
-				E81A9B8618C4160400A0CE2F /* NSString+URLCode.h in Headers */,
-				E81A9B8418C4160400A0CE2F /* NSString+MD5.h in Headers */,
-				E81A9B7E18C4160400A0CE2F /* NSObject+Utilities.h in Headers */,
-				E81A9B6F18C4160400A0CE2F /* GCDDispatch.h in Headers */,
-				E81A9B7A18C4160400A0CE2F /* NSNumber+Utilities.h in Headers */,
-				E8145FC61828C1AD00CFB9F5 /* FoundationExtend.h in Headers */,
+				E81A9BD418C41C8100A0CE2F /* NSDictionary+URLString.h in Headers */,
+				E81A9BCC18C41C8100A0CE2F /* NSData+AES.h in Headers */,
+				E81A9BE018C41C8100A0CE2F /* NSString+MD5.h in Headers */,
+				E81A9BC918C41C8100A0CE2F /* FoundationExtend-Prefix.pch in Headers */,
+				E81A9BDC18C41C8100A0CE2F /* NSString+AES.h in Headers */,
+				E81A9BD618C41C8100A0CE2F /* NSNumber+Utilities.h in Headers */,
+				E81A9BCE18C41C8100A0CE2F /* NSData+Base64.h in Headers */,
+				E81A9BDA18C41C8100A0CE2F /* NSObject+Utilities.h in Headers */,
+				E81A9BCB18C41C8100A0CE2F /* GCDDispatch.h in Headers */,
+				E81A9BE218C41C8100A0CE2F /* NSString+URLCode.h in Headers */,
+				E81A9BD818C41C8100A0CE2F /* NSNumberFormatter+Utilities.h in Headers */,
+				E81A9BDE18C41C8100A0CE2F /* NSString+Base64.h in Headers */,
+				E81A9BE418C41C8100A0CE2F /* NSString+Utilities.h in Headers */,
+				E81A9BCA18C41C8100A0CE2F /* FoundationExtend.h in Headers */,
+				E81A9BD018C41C8100A0CE2F /* NSData+MD5.h in Headers */,
+				E81A9BD218C41C8100A0CE2F /* NSDate+Utilities.h in Headers */,
+				E81A9BC818C41C8100A0CE2F /* ARCMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,19 +231,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E81A9B7118C4160400A0CE2F /* NSData+AES.m in Sources */,
-				E81A9B7918C4160400A0CE2F /* NSDictionary+URLString.m in Sources */,
-				E81A9B7D18C4160400A0CE2F /* NSNumberFormatter+Utilities.m in Sources */,
-				E81A9B7B18C4160400A0CE2F /* NSNumber+Utilities.m in Sources */,
-				E81A9B8518C4160400A0CE2F /* NSString+MD5.m in Sources */,
-				E81A9B8318C4160400A0CE2F /* NSString+Base64.m in Sources */,
-				E81A9B7518C4160400A0CE2F /* NSData+MD5.m in Sources */,
-				E81A9B7318C4160400A0CE2F /* NSData+Base64.m in Sources */,
-				E81A9B8918C4160400A0CE2F /* NSString+Utilities.m in Sources */,
-				E81A9B7F18C4160400A0CE2F /* NSObject+Utilities.m in Sources */,
-				E81A9B8118C4160400A0CE2F /* NSString+AES.m in Sources */,
-				E81A9B8718C4160400A0CE2F /* NSString+URLCode.m in Sources */,
-				E81A9B7718C4160400A0CE2F /* NSDate+Utilities.m in Sources */,
+				E81A9BCD18C41C8100A0CE2F /* NSData+AES.m in Sources */,
+				E81A9BD518C41C8100A0CE2F /* NSDictionary+URLString.m in Sources */,
+				E81A9BD918C41C8100A0CE2F /* NSNumberFormatter+Utilities.m in Sources */,
+				E81A9BD718C41C8100A0CE2F /* NSNumber+Utilities.m in Sources */,
+				E81A9BE118C41C8100A0CE2F /* NSString+MD5.m in Sources */,
+				E81A9BDF18C41C8100A0CE2F /* NSString+Base64.m in Sources */,
+				E81A9BD118C41C8100A0CE2F /* NSData+MD5.m in Sources */,
+				E81A9BCF18C41C8100A0CE2F /* NSData+Base64.m in Sources */,
+				E81A9BE518C41C8100A0CE2F /* NSString+Utilities.m in Sources */,
+				E81A9BDB18C41C8100A0CE2F /* NSObject+Utilities.m in Sources */,
+				E81A9BDD18C41C8100A0CE2F /* NSString+AES.m in Sources */,
+				E81A9BE318C41C8100A0CE2F /* NSString+URLCode.m in Sources */,
+				E81A9BD318C41C8100A0CE2F /* NSDate+Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +306,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/FoundationExtend.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FoundationExtend/FoundationExtend-Prefix.pch";
+				GCC_PREFIX_HEADER = "FoundationExtend-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(BASE_PRODUCT_NAME)/private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -316,7 +320,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/FoundationExtend.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FoundationExtend/FoundationExtend-Prefix.pch";
+				GCC_PREFIX_HEADER = "FoundationExtend-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRIVATE_HEADERS_FOLDER_PATH = "$(BASE_PRODUCT_NAME)/private";
 				PRODUCT_NAME = "$(TARGET_NAME)";
